@@ -82,7 +82,7 @@ var checkAnimaleAngajati = animaleAngajati(numberOfCats, numberOfDogs, numberOfE
 console.log ('******* Punctul e *******');
 
 function vizitaPatron (animal1, animal2, angajati){
-    var fiinte = animal1 + animal2 + angajati;
+    var fiinte = animal1 + animal2 + angajati + 1;
     var multiplu = fiinte % 7;
 
     if (multiplu == 0){
