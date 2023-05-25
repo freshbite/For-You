@@ -10,8 +10,12 @@ var numberOfEmployees = 3;
 console.log ('******* Punctul a *******');
 
 function locuriDispo (locuri){
-    if ( locuri < 15){
-        console.log ('Avem locuri disponibile pentru caini.');
+    var nr = 15 - locuri;
+    if (nr == 1){
+        console.log ('Avem',nr,'loc disponibil pentru caini.');
+    }
+    else if ( locuri < 15){
+        console.log ('Avem',nr,'locuri disponibile pentru caini.');
     }
     else if ( locuri >= 15){
         console.log ('Nu mai avem locuri disponibile pentru caini.');
@@ -29,7 +33,7 @@ function animaleMax ( animal1, animal2){
     if( sumMax >= 30){
         console.log('Hotelul este supra-aglomerat.');
     }
-    else if(locuridispo < 2){
+    else if(locuridispo == 1){
         console.log('Mai este',locuridispo,'loc disponibil in Hotel.');
     }
     else{
